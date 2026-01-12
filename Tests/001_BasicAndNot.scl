@@ -1,0 +1,2 @@
+X := A AND NOT B;
+Y := X;

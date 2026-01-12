@@ -1,0 +1,10 @@
+NETWORK
+TITLE = N1: Assign X
+U  A
+=  X
+
+NETWORK
+TITLE = N2: Assign Y
+U  X
+O  C
+=  Y

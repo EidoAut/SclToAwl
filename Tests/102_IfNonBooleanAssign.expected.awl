@@ -1,0 +1,9 @@
+NETWORK
+TITLE = N1: Assign #COND1
+U  A
+=  #COND1
+
+NETWORK
+TITLE = N2: Set X
+U  #COND1
+S  X

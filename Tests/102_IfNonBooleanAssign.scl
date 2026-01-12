@@ -1,0 +1,3 @@
+IF A THEN
+  X := TRUE;
+END_IF;

@@ -1,0 +1,5 @@
+IF A AND NOT B THEN
+  X := TRUE;
+ELSE
+  X := FALSE;
+END_IF;

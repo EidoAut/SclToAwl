@@ -1,0 +1,4 @@
+REPEAT
+  X := TRUE;
+UNTIL A
+END_REPEAT;

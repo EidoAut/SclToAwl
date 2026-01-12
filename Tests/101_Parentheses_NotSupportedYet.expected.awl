@@ -1,0 +1,16 @@
+NETWORK
+TITLE = N1: Assign #t1
+U  B
+O  C
+=  #t1
+
+NETWORK
+TITLE = N2: Assign #t2
+U  A
+U  #t1
+=  #t2
+
+NETWORK
+TITLE = N3: Assign X
+U  #t2
+=  X

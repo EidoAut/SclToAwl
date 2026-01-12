@@ -1,0 +1,11 @@
+IF A THEN
+  X := TRUE;
+ELSE
+  X := FALSE;
+END_IF;
+
+IF X OR C THEN
+  Y := TRUE;
+ELSE
+  Y := FALSE;
+END_IF;

@@ -119,7 +119,7 @@ sudo chmod +x /usr/local/bin/scltoawl
 
 ## Main commands
 
-### `network` ⭐ (recommended)
+### `network`  (recommended)
 
 Converts **only the body of a single SCL network** and emits **inline AWL**, without `NETWORK` or `TITLE`.
 
@@ -140,7 +140,7 @@ scltoawl network <glob>
 Motor_On := Start_Button AND NOT Stop_Button;
 
 IF Overload THEN
-  Alarm := TRUE;
+ Alarm := TRUE;
 END_IF;
 
 Ready := Motor_On AND (NOT Alarm OR Override);
@@ -149,19 +149,19 @@ Ready := Motor_On AND (NOT Alarm OR Override);
 #### Generated AWL (inline)
 
 ```awl
-U  START_BUTTON
+U START_BUTTON
 UN STOP_BUTTON
-=  MOTOR_ON
+= MOTOR_ON
 
-U  OVERLOAD
-S  ALARM
+U OVERLOAD
+S ALARM
 
-U  MOTOR_ON
+U MOTOR_ON
 U(
 UN ALARM
-O  OVERRIDE
+O OVERRIDE
 )
-=  READY
+= READY
 ```
 
 ---
@@ -179,15 +179,15 @@ scltoawl convert Demo.scl
 ## Conversion modes
 
 - `--strict` (default)  
-  Only emits **100% ladder-clean** logic. Fails if temporaries are required.
+ Only emits **100% ladder-clean** logic. Fails if temporaries are required.
 
 - `--convert`  
-  Allows:
+ Allows:
   - complex parentheses
   - nested ORs
   - arithmetic
   - FOR / WHILE / CASE  
-  while still **preferring ladder-style emission** whenever possible.
+ while still **preferring ladder-style emission** whenever possible.
 
 ```bash
 scltoawl network Demo.scl --convert

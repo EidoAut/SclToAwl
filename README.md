@@ -1,4 +1,23 @@
+<!-- EIDO repository presentation. Detailed technical documentation is preserved below. -->
+<p align="center"><img src="docs/assets/eido-project-banner.svg" alt="SclToAwl — EIDO Automation" width="100%"></p>
+
 # SclToAwl
+
+**Siemens SCL to readable AWL / STL**
+
+A command-line transpiler focused on converting supported SCL logic into ladder-friendly AWL.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-5bbc85.svg)](LICENSE) ![Technology](https://img.shields.io/badge/C%23%20%C2%B7%20Siemens-243b34?style=flat)
+
+**Maintained by [EIDO Automation](https://github.com/EidoAut).** See the [MIT license](LICENSE) for reuse conditions. The capabilities and limitations described below are those of this repository, not a guarantee of production suitability.
+
+## Explore
+
+- [Documentation and usage](#project-documentation)
+- [Source code](./)
+- [License](LICENSE)
+
+## Project documentation
 
 **SclToAwl** is a command-line tool that converts a ladder-friendly subset of **Siemens SCL (Structured Control Language)** into **AWL/STL (Statement List)**, with a strong focus on producing **clean, readable, ladder-like code**.
 

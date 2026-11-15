@@ -5,7 +5,7 @@
 
 **Siemens SCL to readable AWL / STL**
 
-A command-line transpiler focused on converting supported SCL logic into ladder-friendly AWL.
+<p align="justify">A command-line transpiler focused on converting supported SCL logic into ladder-friendly AWL.</p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-5bbc85.svg)](LICENSE)
 
@@ -218,7 +218,7 @@ scltoawl network Networks/*.scl --concat --output all.awl
 
 ## Prefixes (important)
 
-To avoid collisions when pasting multiple networks into the same block:
+<p align="justify">To avoid collisions when pasting multiple networks into the same block:</p>
 
 ```bash
 scltoawl network NW12.scl --prefix NW12_
